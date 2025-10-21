@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavika Baddur - Portfolio</title>
+    <meta name="description" content="Bhavika Baddur — CSE undergrad (KG Reddy, 2026). Building ML-powered web apps: UniEats, News Summarizer, NLP Resume Analyzer.">
+    <meta name="keywords" content="Bhavika Baddur, portfolio, web developer, machine learning, python, flask, react, nlp, unieats, news summarizer">
+    <meta name="author" content="Bhavika">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Bhavika</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="particles" id="particles"></div>
+        <div class="home-container">
+            <div class="home-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    <span class="typewriter" id="typewriter">Hi, I'm Bhavika</span>
+                </h1>
+                <p class="hero-subtitle">Exploring the Intersection of Data, Language, and Intelligence</p>
+                <p class="hero-description">Building intelligent systems that understand language and learn from data. Specializing in NLP, deep learning, and full-stack AI applications that turn ideas into impactful digital experiences.</p>
+                <div class="hero-social-links">
+                    <a href="https://github.com/BHAVIKABADDUR" class="hero-social-link" target="_blank" rel="noopener" title="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bhavika-baddur/" class="hero-social-link" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="Bhavika_Baddur_Resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section (updated intro & education) -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p style="font-size:1.16rem;max-width:700px;margin:0 auto;color:var(--text-secondary);">
+                    <strong>Data & ML Analyst. NLP Enthusiast. Lifelong Problem-Solver.</strong>
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                    <h3>Hi, I'm Bhavika – I craft human-focused insights using code and machine intelligence.</h3>
+                    <p>Computer Science undergraduate at KG Reddy College of Engineering & Technology.</p>
+                    <p><span style="color: var(--accent-primary); font-weight: 500;">Expected Graduation: 2026</span> · CGPA: 8.9/10</p>
+                    <p>I specialize in blending advanced NLP and ML with intuitive web apps, turning raw data into usable intelligence. My curiosity drives me to tackle real-world challenges through full-cycle projects: from model building and evaluation to interactive dashboards and API deployments.</p>
+                </div>
+                <div class="skills-section" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Core Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span>Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="92"></div>
+                                    </div>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>JavaScript/TypeScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>HTML/CSS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Java / C / SQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Frameworks & Tools</h4>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span>Flask</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88"></div>
+                                    </div>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>React (Vite, Tailwind)</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="82"></div>
+                                    </div>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Pandas / Jupyter</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>MySQL / PostgreSQL / SQLite</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (as before, but tidy heading/spacing) -->
+    <section id="experience" class="experience" style="background: var(--bg-primary); padding: 60px 0 40px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Experience</h2>
+            </div>
+            <div class="experience-card" data-aos="fade-up" style="background: var(--bg-secondary); border-radius: 12px; box-shadow: 0 2px 16px var(--shadow-color); padding: 2rem; max-width: 700px; margin: 0 auto 32px auto;">
+                <div class="exp-title" style="font-weight:600;color:var(--accent-primary);font-size:1.08rem;margin-bottom:0.3rem;">AI & ML Intern — IBM SkillsBuild</div>
+                <div style="font-size:0.95rem;color:var(--text-secondary); margin-bottom:0.5rem;">Oct–Nov 2024</div>
+                <div style="color:var(--text-primary);font-size:1rem;">
+                    <ul style="padding-left:1.2em; margin:0;">
+                        <li>Built and evaluated ML models for structured & text datasets (classification, regression, clustering).</li>
+                        <li>Developed end-to-end data pipelines: cleaning, feature engineering, visualization, reporting.</li>
+                        <li>Deployed results using dashboards & interactive notebooks—increasing prediction accuracy >85%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (No images, smaller cards, analytical format) -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Projects</h2>
+                <p style="max-width:700px;margin:8px auto 30px auto;color:var(--text-secondary);font-weight:400;">A curated selection of NLP/ML, analytics, and dashboard builds, each designed for clarity and insight.</p>
+            </div>
+            <div class="projects-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2rem;">
+
+            <!-- UniEats -->
+                <div class="project-card" data-aos="fade-up" style="padding:1.5rem 1.2rem 1.2em 1.2em;background:var(--bg-secondary);border-radius:11px;border:1px solid var(--border-color);min-height:200px;box-shadow:0 2px 10px var(--shadow-color);">
+                    <div class="project-content">
+                        <h3 style="color: var(--accent-primary);margin-bottom:0.45em;font-size:1.19em;font-weight:600;display:inline-flex;align-items:center;">
+                            UniEats
+                            <span style="font-size:1.18em;margin-left:8px;"><i class="fas fa-chart-line" title="ML Analytics"></i></span>
+                        </h3>
+                        <p style="margin-bottom:0.7em;">Designed and developed a full-stack web platform for seamless cafeteria operations. Integrated predictive queue management and personalized menu recommendations using machine learning to reduce wait times and enhance user experience. <a href="https://unieats-app.onrender.com" target="_blank" style="color:var(--accent-secondary);text-decoration:underline">Live demo</a></p>
+                        <div style="display:flex;gap:0.5em;flex-wrap:wrap;">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Analytics</span>
+                            <a href="https://github.com/BHAVIKABADDUR/UniEats-app" title="GitHub" target="_blank" style="margin-left:auto;"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- News Summarizer -->
+                <div class="project-card" data-aos="fade-up" style="padding:1.5rem 1.2rem 1.2em 1.2em;background:var(--bg-secondary);border-radius:11px;border:1px solid var(--border-color);min-height:200px;box-shadow:0 2px 10px var(--shadow-color);">
+                    <div class="project-content">
+                        <h3 style="color: var(--accent-primary);margin-bottom:0.45em;font-size:1.19em;font-weight:600;display:inline-flex;align-items:center;">
+                            News Summarizer
+                            <span style="font-size:1.1em;margin-left:9px;"><i class="fas fa-language" title="NLP"></i></span>
+                        </h3>
+                        <p style="margin-bottom:0.7em;">NLP app for fast news digests: extractive/abstractive summaries, pipeline evaluation, and UX for actionable reading. <a href="https://github.com/BHAVIKABADDUR/News-Summarizer" target="_blank" style="color:var(--accent-secondary);text-decoration:underline">GitHub</a></p>
+                        <div style="display:flex;gap:0.5em;flex-wrap:wrap;">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Transformers</span>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- NLP Resume Analyzer -->
+                <div class="project-card" data-aos="fade-up" style="padding:1.5rem 1.2rem 1.2em 1.2em;background:var(--bg-secondary);border-radius:11px;border:1px solid var(--border-color);min-height:200px;box-shadow:0 2px 10px var(--shadow-color);">
+                    <div class="project-content">
+                        <h3 style="color: var(--accent-primary);margin-bottom:0.45em;font-size:1.19em;font-weight:600;display:inline-flex;align-items:center;">
+                            NLP Resume Analyzer
+                            <span style="font-size:1.1em;margin-left:10px;"><i class="fas fa-file-alt" title="NLP"></i></span>
+                        </h3>
+                        <p style="margin-bottom:0.7em;">Intelligent document parsing: skill/section extraction, scoring & ranking,streamlines resume evaluation for human reviewers. <a href="https://github.com/BHAVIKABADDUR/NLP-resume-analyser" target="_blank" style="color:var(--accent-secondary);text-decoration:underline">GitHub</a></p>
+                        <div style="display:flex;gap:0.5em;flex-wrap:wrap;">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Multilingual Aspect Sentiment -->
+                <div class="project-card" data-aos="fade-up" style="padding:1.5rem 1.2rem 1.2em 1.2em;background:var(--bg-secondary);border-radius:11px;border:1px solid var(--border-color);min-height:200px;box-shadow:0 2px 10px var(--shadow-color);">
+                    <div class="project-content">
+                        <h3 style="color: var(--accent-primary);margin-bottom:0.45em;font-size:1.19em;font-weight:600;display:inline-flex;align-items:center;">
+                            Multilingual Aspect Sentiment (Ongoing)
+                            <span style="font-size:1.1em;margin-left:10px;"><i class="fas fa-language" title="NLP"></i></span>
+                        </h3>
+                        <p style="margin-bottom:0.7em;">Multi-language ABSA for Indian e-commerce reviews:text analytics, sentiment fine-tuning, report dashboard. <a href="https://github.com/BHAVIKABADDUR/multilingual-aspect-sentiment-analysis" target="_blank" style="color:var(--accent-secondary);text-decoration:underline">GitHub</a></p>
+                        <div style="display:flex;gap:0.5em;flex-wrap:wrap;">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Extracurricular Section -->
+    <section class="certifications-extracurricular">
+        <div class="container">
+            <div class="cert-extra-grid">
+                <!-- Certifications Column -->
+                <div class="certifications-column">
+                    <h2 data-aos="fade-up">Certifications</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Professional credentials validating my expertise</p>
+                    
+                    <div class="certifications-list">
+                        <div class="certification-card" data-aos="fade-right" data-aos-delay="100">
+                            <h3 class="cert-title">Introduction to Artificial Intelligence</h3>
+                            <p class="cert-provider">Infosys Springboard</p>
+                            <p class="cert-date">2024</p>
+                            <div class="cert-skills">
+                                <span class="cert-skill-tag">AI Fundamentals</span>
+                                <span class="cert-skill-tag">Machine Learning</span>
+                                <span class="cert-skill-tag">Deep Learning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-card" data-aos="fade-right" data-aos-delay="200">
+                            <h3 class="cert-title">NLP for Developers</h3>
+                            <p class="cert-provider">Infosys Springboard</p>
+                            <p class="cert-date">2024</p>
+                            <div class="cert-skills">
+                                <span class="cert-skill-tag">Natural Language Processing</span>
+                                <span class="cert-skill-tag">Text Analytics</span>
+                                <span class="cert-skill-tag">Transformers</span>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-card" data-aos="fade-right" data-aos-delay="300">
+                            <h3 class="cert-title">Python for Everybody</h3>
+                            <p class="cert-provider">Coursera</p>
+                            <p class="cert-date">2023</p>
+                            <div class="cert-skills">
+                                <span class="cert-skill-tag">Python Programming</span>
+                                <span class="cert-skill-tag">Data Structures</span>
+                                <span class="cert-skill-tag">Web Scraping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Extracurricular Column -->
+                <div class="extracurricular-column">
+                    <h2 data-aos="fade-up">Extracurricular Activities</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Leadership and creative pursuits beyond academics</p>
+                    
+                    <div class="extracurricular-list">
+                        <div class="extracurricular-card" data-aos="fade-left" data-aos-delay="100">
+                            <h3 class="extra-title">Head of Social</h3>
+                            <p class="extra-organization">Pixels Photography Club</p>
+                            <p class="extra-date">2023</p>
+                            <div class="extra-description">
+                                <p>Leading social media strategy and community engagement initiatives for the college photography club. Organizing photography workshops, exhibitions, and collaborative projects.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="extracurricular-card" data-aos="fade-left" data-aos-delay="200">
+                            <h3 class="extra-title">Key Responsibilities</h3>
+                            <div class="responsibilities-list">
+                                <div class="responsibility-item">
+                                    <span class="resp-bullet">•</span>
+                                    <span>Managing social media presence across Instagram, LinkedIn, and Facebook</span>
+                                </div>
+                                <div class="responsibility-item">
+                                    <span class="resp-bullet">•</span>
+                                    <span>Coordinating photography workshops and technical training sessions</span>
+                                </div>
+                                <div class="responsibility-item">
+                                    <span class="resp-bullet">•</span>
+                                    <span>Building partnerships with other college clubs for collaborative events</span>
+                                </div>
+                                <div class="responsibility-item">
+                                    <span class="resp-bullet">•</span>
+                                    <span>Curating and showcasing member photography in college exhibitions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Let's Connect</h2>
+                <p>Ready to collaborate and bring creative ideas to life!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>baddurbhavika@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bhavika-baddur/" class="social-link" title="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/BHAVIKABADDUR" class="social-link" title="GitHub" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:baddurbhavika@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="800">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Bhavika. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
