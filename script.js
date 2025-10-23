@@ -6,6 +6,8 @@ const scrollProgress = document.getElementById('scroll-progress');
 const scrollToTop = document.getElementById('scrollToTop');
 const contactForm = document.getElementById('contactForm');
 const typewriter = document.getElementById('typewriter');
+const emailBtn = document.getElementById('emailBtn');
+const emailTooltip = document.getElementById('emailTooltip');
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSkillBars();
     initializeContactForm();
     initializeScrollToTop();
+    initializeEmailButton();
 });
 
 // Initialize AOS (Animate On Scroll) library
@@ -254,26 +257,38 @@ function initializeParticles() {
 // Animated skill bars
 function initializeSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
+    let hasAnimated = false;
     
     const animateSkillBars = () => {
         skillBars.forEach(bar => {
             const rect = bar.getBoundingClientRect();
-            const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+            const isVisible = rect.top < window.innerHeight * 0.8 && rect.bottom > 0;
             
             if (isVisible && !bar.classList.contains('animated')) {
                 const width = bar.getAttribute('data-width');
-                bar.style.width = width + '%';
-                bar.classList.add('animated');
+                // Force reflow to ensure transition works
+                bar.style.width = '0%';
+                bar.offsetHeight; // Trigger reflow
+                
+                // Use setTimeout to ensure transition is applied
+                setTimeout(() => {
+                    bar.style.width = width + '%';
+                    bar.classList.add('animated');
+                }, 100);
             }
         });
     };
     
     window.addEventListener('scroll', animateSkillBars);
-    animateSkillBars(); // Check on load
+    // Check on page load and after a short delay
+    setTimeout(animateSkillBars, 100);
+    animateSkillBars();
 }
 
 // Contact form handling
 function initializeContactForm() {
+    if (!contactForm) return; // Exit if contact form doesn't exist
+    
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -371,6 +386,50 @@ function showNotification(message, type = 'info') {
             }
         }, 300);
     }, 5000);
+}
+
+// Email button functionality
+function initializeEmailButton() {
+    if (emailBtn && emailTooltip) {
+        // Show tooltip on click
+        emailBtn.addEventListener('click', function() {
+            emailTooltip.classList.add('show');
+            
+            // Copy email to clipboard
+            const email = 'baddurbhavika@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                // Change tooltip text temporarily to show copied
+                const originalText = emailTooltip.textContent;
+                emailTooltip.textContent = 'Copied to clipboard!';
+                emailTooltip.classList.add('copied');
+                
+                setTimeout(() => {
+                    emailTooltip.textContent = originalText;
+                    emailTooltip.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy email:', err);
+            });
+            
+            // Hide tooltip after 3 seconds
+            setTimeout(() => {
+                emailTooltip.classList.remove('show');
+            }, 3000);
+        });
+        
+        // Show tooltip on hover
+        emailBtn.addEventListener('mouseenter', function() {
+            emailTooltip.classList.add('show');
+        });
+        
+        emailBtn.addEventListener('mouseleave', function() {
+            setTimeout(() => {
+                if (!emailTooltip.classList.contains('copied')) {
+                    emailTooltip.classList.remove('show');
+                }
+            }, 300);
+        });
+    }
 }
 
 // Scroll to top functionality

@@ -7,17 +7,17 @@
 
 :root {
     /* Color Palette */
-    --bg-primary: #121212;
-    --bg-secondary: #2A2A2A;
-    --bg-tertiary: #1A1A1A;
-    --text-primary: #EAEAEA;
-    --text-secondary: #B0B0B0;
-    --text-muted: #808080;
+    --bg-primary: #F5F5F5;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #E8E8E8;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-muted: #6B6B6B;
     --accent-primary: #00BFA6;
     --accent-secondary: #C084FC;
     --accent-hover: #00A693;
-    --border-color: #333333;
-    --shadow-color: rgba(0, 0, 0, 0.3);
+    --border-color: #D0D0D0;
+    --shadow-color: rgba(0, 0, 0, 0.15);
     
     /* Typography */
     --font-primary: 'Poppins', sans-serif;
@@ -68,7 +68,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(18, 18, 18, 0.95);
+    background: rgba(245, 245, 245, 0.95);
     backdrop-filter: blur(10px);
     z-index: 999;
     transition: all var(--transition-fast);
@@ -76,7 +76,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(18, 18, 18, 0.98);
+    background: rgba(245, 245, 245, 0.98);
     border-bottom-color: var(--border-color);
     box-shadow: 0 2px 20px var(--shadow-color);
 }
@@ -101,6 +101,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin-left: -13px;
 }
 
 .nav-menu {
@@ -144,7 +145,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background: var(--text-primary);
+    background: #1A1A1A;
     margin: 3px 0;
     transition: all var(--transition-fast);
 }
@@ -259,41 +260,74 @@ body {
 .hero-social-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .hero-social-link {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.8rem 1.5rem;
-    background: rgba(42, 42, 42, 0.6);
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: rgba(0, 191, 166, 0.1);
     border: 1px solid var(--border-color);
-    border-radius: 50px;
-    color: var(--text-primary);
+    border-radius: 50%;
+    color: #1A1A1A;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    cursor: pointer;
 }
 
 .hero-social-link i {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: transform 0.3s ease;
 }
 
 .hero-social-link:hover {
-    background: rgba(0, 191, 166, 0.1);
+    background: rgba(163, 72, 90, 0.25);
     border-color: var(--accent-primary);
     color: var(--accent-primary);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 191, 166, 0.3);
+    box-shadow: 0 5px 15px rgba(245, 218, 167, 0.3);
 }
 
 .hero-social-link:hover i {
     transform: scale(1.2);
+}
+
+.email-tooltip {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 191, 166, 0.95);
+    color: #FFFFFF;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    border: 1px solid var(--accent-primary);
+    backdrop-filter: blur(10px);
+    pointer-events: none;
+    z-index: 100;
+}
+
+.email-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: -50px;
+}
+
+.email-tooltip.copied {
+    background: rgba(192, 132, 252, 0.95);
+    border-color: var(--accent-secondary);
 }
 
 .hero-buttons {
@@ -329,8 +363,8 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: var(--text-primary);
-    border: 2px solid var(--border-color);
+    color: #1A1A1A;
+    border: 2px solid #1A1A1A;
 }
 
 .btn-secondary:hover {
@@ -495,7 +529,7 @@ body {
 .skill-bar {
     flex: 1;
     height: 8px;
-    background: var(--bg-tertiary);
+    background: #D0D0D0;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -566,7 +600,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -625,19 +659,19 @@ body {
 }
 
 .tech-tag {
-    background: var(--bg-tertiary);
+    background: rgba(0, 191, 166, 0.1);
     color: var(--accent-primary);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
     border: 1px solid var(--accent-primary);
 }
 
 /* Certifications & Extracurricular Section */
 .certifications-extracurricular {
     padding: 80px 0;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, #E8F0F2 0%, #D6E9F0 50%, #C4E0ED 100%);
     position: relative;
     overflow: hidden;
 }
@@ -694,7 +728,7 @@ body {
 }
 
 .certification-card {
-    background: rgba(42, 42, 42, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 191, 166, 0.2);
     border-radius: 15px;
@@ -724,7 +758,7 @@ body {
     transform: translateX(8px);
     border-color: var(--accent-primary);
     box-shadow: 0 8px 24px rgba(0, 191, 166, 0.2);
-    background: rgba(42, 42, 42, 0.85);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .cert-title {
@@ -772,7 +806,7 @@ body {
 }
 
 .extracurricular-card {
-    background: rgba(42, 42, 42, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(192, 132, 252, 0.2);
     border-radius: 15px;
@@ -802,7 +836,7 @@ body {
     transform: translateX(-8px);
     border-color: var(--accent-secondary);
     box-shadow: 0 8px 24px rgba(192, 132, 252, 0.2);
-    background: rgba(42, 42, 42, 0.85);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .extra-title {
@@ -895,13 +929,13 @@ body {
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: var(--bg-tertiary);
+    background: #F0F0F0;
     border-radius: 10px;
     transition: all var(--transition-fast);
 }
 
 .contact-method:hover {
-    background: var(--bg-primary);
+    background: #E8E8E8;
     transform: translateX(5px);
 }
 
@@ -935,8 +969,8 @@ body {
 .social-link {
     width: 50px;
     height: 50px;
-    background: var(--bg-tertiary);
-    color: var(--text-secondary);
+    background: #E8E8E8;
+    color: #4A4A4A;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -958,7 +992,7 @@ body {
 
 /* Contact Form */
 .contact-form {
-    background: var(--bg-tertiary);
+    background: #F9F9F9;
     padding: 2rem;
     border-radius: 15px;
     border: 1px solid var(--border-color);
@@ -972,10 +1006,10 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    background: var(--bg-primary);
+    background: #FFFFFF;
     border: 1px solid var(--border-color);
     border-radius: 10px;
-    color: var(--text-primary);
+    color: #1A1A1A;
     font-family: var(--font-secondary);
     transition: all var(--transition-fast);
 }
@@ -994,7 +1028,7 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--bg-primary);
+    background: #EFEFEF;
     padding: 2rem 0;
     border-top: 1px solid var(--border-color);
 }
@@ -1065,7 +1099,7 @@ body {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: var(--bg-primary);
+        background: #F5F5F5;
         flex-direction: column;
         justify-content: start;
         align-items: center;
@@ -1107,16 +1141,15 @@ body {
     }
 
     .hero-social-links {
-        flex-direction: column;
-        width: 100%;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-social-link {
-        width: 100%;
+        flex-direction: row;
+        gap: 1rem;
         justify-content: center;
+        margin-bottom: 3.5rem;
+    }
+    
+    .email-tooltip {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.8rem;
     }
 
     .about-content {
@@ -1231,7 +1264,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-secondary);
+    background: #F0F0F0;
 }
 
 ::-webkit-scrollbar-thumb {
