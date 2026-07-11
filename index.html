@@ -3,225 +3,344 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhavika Baddur</title>
-<meta name="description" content="Bhavika Baddur, Computer Science student graduating in 2026, building AI systems and data platforms, based in Dubai and open to roles across the UAE and India.">
-<meta property="og:title" content="Bhavika Baddur: AI &amp; Data Engineering">
-<meta property="og:description" content="Computer Science student graduating in 2026, building AI systems and data platforms. Based in Dubai, open to roles across the UAE and India.">
+<title>Bhavika Baddur: Systems &amp; Data Engineer</title>
+<meta name="description" content="Bhavika Baddur, Systems and Data Engineer graduating August 2026. Multi-agent AI platforms and enterprise data infrastructure. Based in Dubai, open to roles across the UAE and India.">
+<meta property="og:title" content="Bhavika Baddur: Systems & Data Engineer">
+<meta property="og:description" content="Multi-agent AI platforms and enterprise data infrastructure. Based in Dubai, open to roles across the UAE and India.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Scroll progress -->
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">Bhavika Baddur</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="assets/Bhavika_Baddur_Resume.pdf" target="_blank" rel="noopener" class="nav-link">Resume PDF</a>
+      <a href="https://www.linkedin.com/in/bhavika-baddur/" target="_blank" rel="noopener" class="nav-link">LinkedIn</a>
+      <a href="https://github.com/BHAVIKABADDUR" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+      <a href="#contact" class="nav-link nav-link-strong">Contact</a>
+    </nav>
+    <button id="mobileToggle" class="mobile-toggle" aria-label="Open menu">Menu</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="assets/Bhavika_Baddur_Resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
+    <a href="https://www.linkedin.com/in/bhavika-baddur/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/BHAVIKABADDUR" target="_blank" rel="noopener">GitHub</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
 
-<!-- Film-strip chapter rail -->
-<nav class="rail" id="rail" aria-label="Chapters">
-    <div class="rail-sprockets" aria-hidden="true"></div>
-    <ol class="rail-list">
-        <li><a href="#ch00" data-ch="00" class="rail-link active">00<span>Start</span></a></li>
-        <li><a href="#ch01" data-ch="01" class="rail-link">01<span>Origin</span></a></li>
-        <li><a href="#ch02" data-ch="02" class="rail-link">02<span>Work</span></a></li>
-        <li><a href="#ch03" data-ch="03" class="rail-link">03<span>Built</span></a></li>
-        <li><a href="#ch04" data-ch="04" class="rail-link">04<span>Beyond</span></a></li>
-        <li><a href="#ch05" data-ch="05" class="rail-link">05<span>Talk</span></a></li>
-    </ol>
-    <div class="rail-sprockets" aria-hidden="true"></div>
-</nav>
+<main id="top">
 
-<!-- Mobile top bar -->
-<div class="mobile-bar">
-    <span class="mobile-bar-name">Bhavika Baddur</span>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Open chapters">☰</button>
-</div>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="#ch00" class="mobile-link">00 - Start</a>
-    <a href="#ch01" class="mobile-link">01 - Origin</a>
-    <a href="#ch02" class="mobile-link">02 - Work</a>
-    <a href="#ch03" class="mobile-link">03 - Built</a>
-    <a href="#ch04" class="mobile-link">04 - Beyond</a>
-    <a href="#ch05" class="mobile-link">05 - Let's Talk</a>
-</div>
-
-<main>
-
-<!-- 00 - Opening -->
-<section id="ch00" class="chapter hero-chapter" data-ch="00">
-    <div class="wrap">
-        <p class="eyebrow hero-in" style="--d:0">Bhavika Baddur | Hyderabad, India → Dubai, UAE</p>
-        <h1 class="hero-line hero-in" style="--d:1">I'm still early in this.<br>That's kind of the point.</h1>
-        <p class="hero-sub hero-in" style="--d:2">I'm a Computer Science student graduating in August 2026, building at the edge of AI and data engineering, usually because a process was too manual or a question kept needing ten steps when it should have needed one.</p>
-        <div class="hero-actions hero-in" style="--d:3">
-            <a href="#ch01" class="btn btn-primary">Read the story</a>
-            <a href="assets/Bhavika_Baddur_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download résumé</a>
-        </div>
-        <div class="hero-links hero-in" style="--d:4">
-            <a href="https://github.com/BHAVIKABADDUR" target="_blank" rel="noopener">GitHub</a>
-            <span class="dot">·</span>
-            <a href="https://www.linkedin.com/in/bhavika-baddur/" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="dot">·</span>
-            <button class="link-btn" id="emailBtn">baddurbhavika@gmail.com</button>
-            <span class="copy-toast" id="copyToast">copied</span>
-        </div>
+<!-- ============ HERO ============ -->
+<section class="hero grid-veil">
+  <div class="wrap">
+    <div class="status-badge">
+      <span class="status-dot"></span>
+      Available for Technical Roles in Dubai &middot; Residency Visa
     </div>
-    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+
+    <h1 class="hero-name">Bhavika Baddur</h1>
+    <p class="hero-role">Systems &amp; Data Engineer</p>
+    <p class="hero-sub">Building resilient data infrastructure and multi-agent AI systems, currently graduating Computer Science in August 2026. Based in Dubai, open across the UAE and India.</p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Case Studies</a>
+      <a href="assets/Bhavika_Baddur_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download Résumé</a>
+    </div>
+  </div>
 </section>
 
-<!-- 01 - Origin -->
-<section id="ch01" class="chapter" data-ch="01">
-    <div class="wrap narrow">
-        <p class="frame-label">Frame 01</p>
-        <h2 class="chapter-title">Where this started</h2>
-        <p class="body-text">I'm studying Computer Science at KG Reddy College of Engineering &amp; Technology in Hyderabad, graduating in August 2026. The first things I built were small: NLP scripts, a resume matcher, a college ordering app. Somewhere along the way I got pulled toward bigger systems: data pipelines that had to run without me watching them, and agents that had to make decisions without me in the loop.</p>
-        <p class="body-text">Right now I'm based in Dubai on a residency visa, and I'm also keeping an eye on opportunities back in India. I'm looking mostly at AI, ML, and data engineering roles, though honestly the job title matters less to me than who I'd be working with and how close I'd get to real data and real systems.</p>
+<!-- ============ EXPERIENCE ============ -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">01 &mdash; Professional Experience</p>
 
-        <h3 class="sub-heading">What I work with</h3>
-        <p class="body-text small">This is what I've actually used in internships and projects, not a wishlist of tools I've read about.</p>
+    <div class="exp-grid">
+      <div class="exp-meta">
+        <h2 class="exp-title">AI &amp; Data Engineering</h2>
+        <p class="exp-company">Wissen Infotech, Hyderabad</p>
+        <p class="exp-dates">Feb 2026 &mdash; May 2026</p>
+      </div>
 
-        <div class="skill-lines">
-            <div class="skill-line">
-                <span class="skill-cat">AI &amp; Agents</span>
-                <span class="skill-items">LangGraph, LangChain, MCP, RAG, FAISS, prompt engineering, NLP</span>
-            </div>
-            <div class="skill-line">
-                <span class="skill-cat">Data &amp; Cloud</span>
-                <span class="skill-items">PySpark, Databricks, Delta Lake, Microsoft Azure, Microsoft Fabric, SQL Server, Power BI</span>
-            </div>
-            <div class="skill-line">
-                <span class="skill-cat">Languages</span>
-                <span class="skill-items">Python, Java, C, JavaScript, TypeScript, SQL</span>
-            </div>
-            <div class="skill-line">
-                <span class="skill-cat">Tools</span>
-                <span class="skill-items">Git, Docker, Streamlit, n8n, Power Automate, Copilot Studio</span>
-            </div>
-        </div>
-
-        <div class="cert-row">
-            <span class="cert-item">Data Analysis with Python - IBM SkillsBuild</span>
-            <span class="cert-item">Introduction to AI - Infosys Springboard</span>
-        </div>
-    </div>
-</section>
-
-<!-- 02 - Work -->
-<section id="ch02" class="chapter alt" data-ch="02">
-    <div class="wrap narrow">
-        <p class="frame-label">Frame 02</p>
-        <h2 class="chapter-title">Where the work became real</h2>
-        <div class="job-meta">
-            <span class="job-role">AI &amp; Data Engineering, Wissen Infotech</span>
-            <span class="job-dates">Feb 2026 – May 2026 · Hyderabad</span>
-        </div>
-        <ul class="story-list">
-            <li>My first real task was a Telugu FIR translation tool: Tesseract OCR to read the scanned police documents, Sarvam AI to translate them, Streamlit to hold it together. Nothing about the input was clean, and that was the whole lesson: real documents don't look like sample data.</li>
-            <li>I built a Copilot Studio chatbot on top of 26,000+ transactions sitting across Azure SQL and Excel. The point was simple: someone in the business shouldn't have to wait on an engineer to write a query just to ask a plain-English question.</li>
-            <li>I set up Power Automate flows to catch duplicates, NULLs, and failed checks before they went further down the pipeline. Not exciting work, but it's the kind of thing that saves a week later when nobody has to debug why the numbers look wrong.</li>
-            <li>I also connected two Azure Data Lake accounts through Microsoft Fabric and configured mirroring for an Azure SQL database. It was my first real look at how data actually moves between services once you're outside a tutorial.</li>
+      <div class="exp-body">
+        <ul class="exp-list">
+          <li>Engineered an AI-powered Telugu FIR translation platform using <strong>Tesseract OCR</strong> and <strong>Sarvam AI</strong>, deployed as an end-to-end Streamlit application.</li>
+          <li>Designed a <strong>Copilot Studio</strong> analytics chatbot over 26,000+ transactions across Azure SQL and Excel, enabling plain-English queries for non-technical business users.</li>
+          <li>Automated data quality validation, duplicate filtering, NULL analysis, and pass/fail reporting, via <strong>Power Automate</strong> workflows.</li>
+          <li class="no-border">Configured <strong>Microsoft Fabric</strong> mirroring between Azure Data Lake accounts for continuous, near-real-time Azure SQL synchronization.</li>
         </ul>
-        <div class="tag-row">
-            <span class="quiet-tag">Copilot Studio</span>
-            <span class="quiet-tag">Microsoft Fabric</span>
-            <span class="quiet-tag">Azure SQL</span>
-            <span class="quiet-tag">Power Automate</span>
-            <span class="quiet-tag">Streamlit</span>
-            <span class="quiet-tag">Tesseract OCR</span>
-        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- 03 - Projects -->
-<section id="ch03" class="chapter" data-ch="03">
-    <div class="wrap">
-        <p class="frame-label">Frame 03</p>
-        <h2 class="chapter-title">What I've built</h2>
-        <p class="body-text intro-text">Four projects, roughly the order I'd bring them up in an interview. FinSight is the one I'd want you to open first.</p>
+<!-- ============ CAPABILITIES GRID ============ -->
+<section class="section section-alt">
+  <div class="wrap">
+    <p class="eyebrow">02 &mdash; Core Engineering Infrastructure</p>
+    <h2 class="section-title">Capabilities Grid</h2>
 
-        <div class="contact-sheet">
-
-            <article class="frame frame-wide">
-                <div class="frame-head">
-                    <span class="frame-no">01</span>
-                    <span class="frame-tag">flagship</span>
-                </div>
-                <h3 class="frame-title">FinSight Enterprise AI</h3>
-                <p class="frame-sub">Multi-agent financial intelligence platform</p>
-                <p class="frame-desc">This one started with a design question I couldn't let go of: what if AI agents were never allowed to touch the database directly? FinSight reads bank statements and invoices, pulls structured data out of them, and routes the review work through five LangGraph agents, but every one of those agents talks to the data through four MCP tool servers I built specifically to sit in between. It's overkill for a side project, and I built it that way on purpose. The current dataset covers 387+ transactions across multiple business entities, with Power BI handling the reporting layer on top.</p>
-                <p class="frame-shot">Built with: LangGraph · MCP · n8n · Supabase · Qdrant · Groq (Llama 3.3) · Power BI · PySpark · Tesseract OCR</p>
-                <div class="frame-links">
-                    <a href="https://finsight-enterprise-ai-t72tgheqs9g6kaudwzdxek.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
-                    <a href="https://github.com/BHAVIKABADDUR/finsight-enterprise-ai" target="_blank" rel="noopener">Source</a>
-                </div>
-            </article>
-
-            <article class="frame">
-                <div class="frame-head"><span class="frame-no">02</span></div>
-                <h3 class="frame-title">DataForge AI</h3>
-                <p class="frame-sub">Multi-agent analytics copilot</p>
-                <p class="frame-desc">This came out of RetailIQ, honestly. I got tired of hopping between SQL, notebooks, and dashboards just to answer one question about the data. So I built a seven-agent setup that figures out on its own whether a request needs SQL, analysis, documentation, or an ETL job, then goes and does it. It writes queries and PySpark code, explains what it found, and holds onto enough context to handle a follow-up question without me repeating myself.</p>
-                <p class="frame-shot">Built with: LangGraph · LangChain · Groq · FAISS · SQL Server</p>
-                <div class="frame-links"><a href="https://github.com/BHAVIKABADDUR/dataforge-ai" target="_blank" rel="noopener">Source</a></div>
-            </article>
-
-            <article class="frame">
-                <div class="frame-head"><span class="frame-no">03</span></div>
-                <h3 class="frame-title">RetailIQ</h3>
-                <p class="frame-sub">Retail intelligence lakehouse</p>
-                <p class="frame-desc">Before this, I thought data cleaning basically was the pipeline. RetailIQ is where that stopped being true: a Bronze, Silver, Gold lakehouse in Databricks for retail transactions across four regions, feeding into SQL Server and then Power BI. The part that actually stuck with me: a clean dataset is worthless if the person after you can't query it without asking what half the columns mean.</p>
-                <p class="frame-shot">Built with: Databricks · PySpark · Delta Lake · SQL Server · Power BI</p>
-                <div class="frame-links"><a href="https://github.com/BHAVIKABADDUR/retail-intelligence-lakehouse" target="_blank" rel="noopener">Source</a></div>
-            </article>
-
-            <article class="frame">
-                <div class="frame-head"><span class="frame-no">04</span></div>
-                <h3 class="frame-title">Hinglish Sentiment Analysis</h3>
-                <p class="frame-sub">Code-mixed NLP for e-commerce reviews</p>
-                <p class="frame-desc">I built this because sentiment models fall apart the second a review switches from Hindi to English mid-sentence, which is just... how people actually write. I tried classical ML against XLM-RoBERTa and ended up collapsing it to a binary sentiment setup, which got me to 77% accuracy. The score mattered less than what it showed me: how fast a model trained on clean English text stops working the moment real language shows up.</p>
-                <p class="frame-shot">Built with: Python · XLM-RoBERTa · scikit-learn · Streamlit</p>
-                <div class="frame-links"><a href="https://github.com/BHAVIKABADDUR/multilingual-aspect-sentiment-analysis" target="_blank" rel="noopener">Source</a></div>
-            </article>
-
-        </div>
+    <div class="cap-grid">
+      <div class="cap-cell">
+        <h3 class="cap-label">Data Architecture &amp; Pipelines</h3>
+        <p class="cap-items">PySpark, Databricks, Delta Lake, Microsoft Azure, Microsoft Fabric, SQL Server, Power BI</p>
+      </div>
+      <div class="cap-cell">
+        <h3 class="cap-label">Core Languages</h3>
+        <p class="cap-items">Python, Java, C, JavaScript, TypeScript, SQL</p>
+      </div>
+      <div class="cap-cell">
+        <h3 class="cap-label">Systems Automation &amp; NLP</h3>
+        <p class="cap-items">LangGraph, LangChain, MCP, RAG, FAISS, Prompt Engineering, NLP</p>
+      </div>
+      <div class="cap-cell">
+        <h3 class="cap-label">Engineering Tooling</h3>
+        <p class="cap-items">Git, Docker, Streamlit, n8n, Power Automate, Copilot Studio</p>
+      </div>
     </div>
+
+    <div class="cert-row">
+      <span>Data Analysis with Python &mdash; IBM SkillsBuild</span>
+      <span>Introduction to AI &mdash; Infosys Springboard</span>
+    </div>
+  </div>
 </section>
 
-<!-- 04 - Beyond engineering -->
-<section id="ch04" class="chapter alt" data-ch="04">
-    <div class="wrap narrow">
-        <p class="frame-label">Frame 04</p>
-        <h2 class="chapter-title">Beyond Engineering</h2>
-        <p class="body-text">College hasn't been only classes and side projects. I ran social media for <strong>PIXELS</strong>, my college's media and photography club, as Head of Social Media: planning content, keeping things moving around events, working with a team that didn't always agree with me. I picked up a camera for a few college events too.</p>
-        <p class="body-text">It's a different kind of pressure from writing code. Deadlines were public, plans changed the day of, and getting anything done meant working around people whose schedules had nothing in common with mine.</p>
-        <blockquote class="pull-quote">I'm still figuring out exactly what kind of engineer I want to become. Building things is how I've been narrowing that down.</blockquote>
+<!-- ============ CASE STUDIES ============ -->
+<section id="projects" class="section">
+  <div class="wrap">
+    <p class="eyebrow">03 &mdash; Systems &amp; Data Engineering</p>
+    <h2 class="section-title">Case Studies</h2>
+
+    <div class="case-list">
+
+      <!-- CASE STUDY 01: FinSight -->
+      <article class="case">
+        <div class="case-table">
+          <div class="case-table-head">
+            <div>Domain</div>
+            <div>Core Infrastructure Stack</div>
+            <div>System Impact</div>
+          </div>
+          <div class="case-table-row">
+            <div>Financial Document Intelligence</div>
+            <div>LangGraph, MCP, n8n, Supabase, Qdrant, Groq (Llama 3.3), Power BI, PySpark, Tesseract OCR</div>
+            <div>Automated risk analysis and anomaly detection, with agent-to-database access mediated entirely through dedicated MCP tool servers.</div>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <div class="case-head">
+            <span class="case-no">01</span>
+            <h3 class="case-title">FinSight Enterprise AI</h3>
+            <span class="case-tag">Flagship</span>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat">
+              <p class="stat-num">387+</p>
+              <p class="stat-label">Transactions Processed</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">88&ndash;100%</p>
+              <p class="stat-label">Field Extraction Confidence</p>
+            </div>
+          </div>
+          <p class="case-note">Five LangGraph agents handle the review workflow, each one talking to the data only through the MCP servers above.</p>
+
+          <div class="flow-block">
+            <p class="flow-label">System Architecture</p>
+            <div class="flow">
+              <span class="flow-node">Statements / Invoices</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Tesseract OCR</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">LLM Extraction</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">5 LangGraph Agents</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">4 MCP Tool Servers</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Supabase / Qdrant</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Power BI</span>
+            </div>
+          </div>
+
+          <div class="case-links">
+            <a href="https://finsight-enterprise-ai-t72tgheqs9g6kaudwzdxek.streamlit.app/" target="_blank" rel="noopener" class="nav-link">Live Demo</a>
+            <a href="https://github.com/BHAVIKABADDUR/finsight-enterprise-ai" target="_blank" rel="noopener" class="nav-link">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE STUDY 02: DataForge -->
+      <article class="case">
+        <div class="case-table">
+          <div class="case-table-head">
+            <div>Domain</div>
+            <div>Core Infrastructure Stack</div>
+            <div>System Impact</div>
+          </div>
+          <div class="case-table-row">
+            <div>Multi-Agent Analytics Copilot</div>
+            <div>LangGraph, LangChain, Groq (Llama 3.3), FAISS, SQL Server</div>
+            <div>Translates natural-language business requests into executable SQL and PySpark, with persistent multi-turn context.</div>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <div class="case-head">
+            <span class="case-no">02</span>
+            <h3 class="case-title">DataForge AI</h3>
+          </div>
+
+          <p class="case-note case-note-lead">A seven-agent workflow decides whether a request needs SQL, analysis, documentation, or an ETL job, then handles it, and keeps enough conversation context to answer a follow-up question.</p>
+
+          <div class="flow-block">
+            <p class="flow-label">System Architecture</p>
+            <div class="flow">
+              <span class="flow-node">NL Query</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Planner Agent</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Context Agent</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">FAISS Schema Retrieval</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">SQL / PySpark Generation</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Business Insight</span>
+            </div>
+          </div>
+
+          <div class="case-links">
+            <a href="https://github.com/BHAVIKABADDUR/dataforge-ai" target="_blank" rel="noopener" class="nav-link">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE STUDY 03: RetailIQ -->
+      <article class="case">
+        <div class="case-table">
+          <div class="case-table-head">
+            <div>Domain</div>
+            <div>Core Infrastructure Stack</div>
+            <div>System Impact</div>
+          </div>
+          <div class="case-table-row">
+            <div>Retail Intelligence Lakehouse</div>
+            <div>Databricks, PySpark, Delta Lake, SQL Server, Power BI</div>
+            <div>Medallion-architecture lakehouse consolidating regional retail transactions into governed, query-ready reporting tables.</div>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <div class="case-head">
+            <span class="case-no">03</span>
+            <h3 class="case-title">RetailIQ</h3>
+          </div>
+
+          <p class="case-note case-note-lead">A Bronze, Silver, Gold lakehouse in Databricks for retail transactions across four regions, feeding a star-schema warehouse in SQL Server and a Power BI dashboard on top.</p>
+
+          <div class="flow-block">
+            <p class="flow-label">System Architecture</p>
+            <div class="flow">
+              <span class="flow-node">Raw Transactions</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Bronze Layer</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Silver Layer</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Gold Layer (KPIs)</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">SQL Server Warehouse</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Power BI</span>
+            </div>
+          </div>
+
+          <div class="case-links">
+            <a href="https://github.com/BHAVIKABADDUR/retail-intelligence-lakehouse" target="_blank" rel="noopener" class="nav-link">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE STUDY 04: Hinglish -->
+      <article class="case">
+        <div class="case-table">
+          <div class="case-table-head">
+            <div>Domain</div>
+            <div>Core Infrastructure Stack</div>
+            <div>System Impact</div>
+          </div>
+          <div class="case-table-row">
+            <div>Code-Mixed NLP</div>
+            <div>Python, XLM-RoBERTa, scikit-learn, Streamlit</div>
+            <div>Classifies sentiment in mixed Hindi-English e-commerce reviews, redesigned from 3-class to binary to reduce label ambiguity.</div>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <div class="case-head">
+            <span class="case-no">04</span>
+            <h3 class="case-title">Hinglish Sentiment Analysis</h3>
+          </div>
+
+          <div class="stat-row stat-row-single">
+            <div class="stat">
+              <p class="stat-num">77%</p>
+              <p class="stat-label">Classification Accuracy</p>
+            </div>
+          </div>
+
+          <div class="flow-block">
+            <p class="flow-label">System Architecture</p>
+            <div class="flow">
+              <span class="flow-node">Raw Review Text</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Normalization / Denoising</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Tokenization</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">XLM-RoBERTa Classifier</span><span class="flow-arrow">&rarr;</span>
+              <span class="flow-node">Aspect-Level Insight</span>
+            </div>
+          </div>
+
+          <div class="case-links">
+            <a href="https://github.com/BHAVIKABADDUR/multilingual-aspect-sentiment-analysis" target="_blank" rel="noopener" class="nav-link">Source</a>
+          </div>
+        </div>
+      </article>
+
     </div>
+  </div>
 </section>
 
-<!-- 05 - Contact -->
-<section id="ch05" class="chapter closing" data-ch="05">
-    <div class="wrap narrow">
-        <p class="frame-label">Frame 05</p>
-        <h2 class="chapter-title">I'm looking for what comes next</h2>
-        <p class="body-text">I graduate in August 2026 and I'm looking for entry-level roles in AI, ML, and data engineering across the UAE and India. I know I'm early in my career. What I bring is real project experience, some exposure to how enterprise systems actually work, and a habit of digging into the details when something doesn't make sense to me yet. If that's useful to your team, I'd like to talk.</p>
-        <div class="hero-actions">
-            <button class="btn btn-primary" id="emailBtn2">Email me</button>
-            <a href="assets/Bhavika_Baddur_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download résumé</a>
-        </div>
-        <div class="hero-links">
-            <a href="https://github.com/BHAVIKABADDUR" target="_blank" rel="noopener">GitHub</a>
-            <span class="dot">·</span>
-            <a href="https://www.linkedin.com/in/bhavika-baddur/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+<!-- ============ BEYOND ============ -->
+<section class="section section-alt">
+  <div class="wrap">
+    <p class="eyebrow">04 &mdash; Beyond Engineering</p>
+    <div class="beyond-grid">
+      <p class="beyond-text">Outside coursework and systems work, I served as Head of Social Media for PIXELS, my college's media and photography club, planning content and coordinating around events. I also covered college events through photography.</p>
+      <blockquote class="pull-quote">I'm still figuring out exactly what kind of engineer I want to become. Building things is how I've been narrowing that down.</blockquote>
     </div>
-    <footer class="footer">
-        <p>Bhavika Baddur · Hyderabad ↔ Dubai · 2026</p>
-    </footer>
+  </div>
 </section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <p class="eyebrow">05 &mdash; Contact</p>
+    <h2 class="contact-title">Graduating August 2026. Looking for entry-level AI, ML, and data engineering roles across the UAE and India.</h2>
+
+    <div class="hero-actions">
+      <button id="emailBtn" class="btn btn-primary">baddurbhavika@gmail.com</button>
+      <a href="assets/Bhavika_Baddur_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download Résumé</a>
+    </div>
+    <span id="copyToast" class="copy-toast">Copied to clipboard</span>
+
+    <div class="contact-links">
+      <a href="https://github.com/BHAVIKABADDUR" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/bhavika-baddur/" target="_blank" rel="noopener" class="nav-link">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">Bhavika Baddur &middot; Hyderabad &harr; Dubai &middot; 2026</div>
+</footer>
 
 </main>
 
